@@ -1,4 +1,3 @@
-package Week1;
 import java.util.Scanner;
 public class TriangleTypes {
     public static void main(String[] args) {
