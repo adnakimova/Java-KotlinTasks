@@ -7,5 +7,5 @@ INSERT INTO DonutShop(name,price) VALUES('ChocolateDonut',130);
 Select *from DonutShop;
 
 create table car(id INTEGER PRIMARY KEY,brand Text,year INTEGER,price INTEGER,country TEXT);
-INSERT INTO car(id,brand,year,price,country) VALUE(1,,'Toyota',2019,21000,'Japan');
+INSERT INTO car(id,brand,year,price,country) VALUE(1,'Toyota',2019,21000,'Japan');
 INSERT INTO car(id,brand,year,price,country) VALUE(2,'Opel',2009,5000,'Germany');
