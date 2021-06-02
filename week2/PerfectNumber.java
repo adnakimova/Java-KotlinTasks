@@ -1,6 +1,6 @@
 package Week2;
 import java.util.Scanner;
-public class perfectNumber {
+public class PerfectNumber {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
