@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Main {
+public class FibonacciArray {
      public static long fib(int n)
         {
             long f[] = new long[n + 2];
