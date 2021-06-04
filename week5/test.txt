@@ -1,0 +1,30 @@
+Added the dependency for JDBC in pom.xml
+Created a class in Maven.
+Then connected my local database "mydatabase" with my user and password.
+Did some tests with table "donutshop".
+
+
+public class MavenProject {
+    public static void main(String[] args) {
+        String url = "jdbc:mysql://localhost:1306/mydatabase";
+        String user = "aidana";
+        String password = "root1245";
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection connection = DriverManager.getConnection(url,user,password);
+            System.out.println("Connection is successful to the database" + url);
+            String query = "INSERT INTO donutshop(name, price) VALUES('Donut1',145)";
+            Statement statement = connection.createStatement();
+            statement.execute(query);
+            statement.execute("INSERT INTO donutshop(name, price) VALUES('Donut2',234)");
+            statement.execute("INSERT INTO donutshop(name, price) VALUES('SweetFrost Donuts',146)");
+            statement.execute("DELETE FROM donutshop WHERE name = 'Donut2'");
+
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+
+    }
+}
