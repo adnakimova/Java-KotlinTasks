@@ -8,7 +8,7 @@ public class MavenProject {
     public static void main(String[] args) throws SQLException {
         String url = "jdbc:mysql://localhost:1306/mydatabase";
         String user = "aidana";
-        String password = "Aselka79.";
+        String password = "root1245";
         Connection connection = DriverManager.getConnection(url,user,password);
         Statement statement = connection.createStatement();
 
